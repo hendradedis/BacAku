@@ -3,14 +3,11 @@ import {ImageStyle, StyleSheet, TextStyle, ViewStyle} from 'react-native';
 interface IStyles {
   container: ViewStyle;
   contentBox: ViewStyle;
+  header: ViewStyle;
   imageBackground: ImageStyle;
+  icon: ImageStyle;
   containerTitle: TextStyle;
   daftarBuku: TextStyle;
-  text: TextStyle;
-  boxCard: ViewStyle;
-  leftBox: ViewStyle;
-  rightBox: ViewStyle;
-  heightFlatlist: ViewStyle;
 }
 
 const styles = StyleSheet.create<IStyles>({
@@ -31,8 +28,7 @@ const styles = StyleSheet.create<IStyles>({
   containerTitle: {
     justifyContent: 'center',
     alignSelf: 'center',
-    marginBottom: 25,
-    marginTop: '35%',
+    marginBottom: 350,
     backgroundColor: '#273c75',
     width: 200,
     height: 40,
@@ -44,34 +40,17 @@ const styles = StyleSheet.create<IStyles>({
     fontSize: 14,
     letterSpacing: 1,
   },
-  boxCard: {
+  header: {
+    height: 60,
+    padding: 16,
+    backgroundColor: '#0097e6',
     flexDirection: 'row',
-    paddingVertical: 8,
-    marginHorizontal: 16,
+    alignItems: 'center',
   },
-  leftBox: {
-    width: '25%',
-    height: 45,
-    backgroundColor: '#30336b',
-    paddingHorizontal: 9,
-    justifyContent: 'center',
-    borderTopLeftRadius: 30,
-  },
-  rightBox: {
-    width: '75%',
-    height: 45,
-    backgroundColor: '#4834d4',
-    paddingHorizontal: 8,
-    justifyContent: 'center',
-    borderBottomRightRadius: 30,
-  },
-  text: {
-    fontSize: 14,
-    letterSpacing: 1,
-    color: 'white',
-  },
-  heightFlatlist: {
-    height: '65%',
+  icon: {
+    width: 20,
+    height: 20,
+    marginRight: 16,
   },
 });
 
