@@ -6012,6 +6012,11 @@ react-native-gradle-plugin@^0.70.3:
   resolved "https://registry.npmjs.org/react-native-gradle-plugin/-/react-native-gradle-plugin-0.70.3.tgz"
   integrity sha512-oOanj84fJEXUg9FoEAQomA8ISG+DVIrTZ3qF7m69VQUJyOGYyDZmPqKcjvRku4KXlEH6hWO9i4ACLzNBh8gC0A==
 
+react-native-pdf-renderer@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/react-native-pdf-renderer/-/react-native-pdf-renderer-1.2.0.tgz#1705a888fbfc10d3f9f52ce10e9e0d9e4a7ce523"
+  integrity sha512-KfpWdD4bbywl2D2qpnk+tGYA5mB19cVmRQGOlgC5aCRJEcXX6xdSthJRVBjFW2MjRvImtw7wDVzuUZpDUkMddg==
+
 react-native-safe-area-context@^4.4.1:
   version "4.4.1"
   resolved "https://registry.npmjs.org/react-native-safe-area-context/-/react-native-safe-area-context-4.4.1.tgz"

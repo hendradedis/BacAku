@@ -1,9 +1,16 @@
-import {ImageStyle, StyleSheet, TextStyle, ViewStyle} from 'react-native';
+import {
+  Dimensions,
+  ImageStyle,
+  StyleSheet,
+  TextStyle,
+  ViewStyle,
+} from 'react-native';
 
 interface IStyles {
   container: ViewStyle;
   contentBox: ViewStyle;
   header: ViewStyle;
+  pdf: ViewStyle;
   imageBackground: ImageStyle;
   icon: ImageStyle;
   containerTitle: TextStyle;
@@ -51,6 +58,11 @@ const styles = StyleSheet.create<IStyles>({
     width: 20,
     height: 20,
     marginRight: 16,
+  },
+  pdf: {
+    flex: 1,
+    width: Dimensions.get('window').width,
+    height: Dimensions.get('window').height,
   },
 });
 

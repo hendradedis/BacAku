@@ -4,7 +4,7 @@ export const DATA_BUKU = [
   {
     Id: 1,
     title: 'Aku dan kucingku',
-    source: '../assets/sourcePdf/Aku dan kucingku.pdf',
+    source: 'file:///assets/sourcePdf/Aku dan kucingku.pdf',
   },
   {
     Id: 2,

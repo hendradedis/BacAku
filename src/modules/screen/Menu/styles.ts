@@ -52,7 +52,7 @@ const styles = StyleSheet.create<IStyles>({
   leftBox: {
     width: '25%',
     height: 45,
-    backgroundColor: '#30336b',
+    backgroundColor: '#273c75',
     paddingHorizontal: 9,
     justifyContent: 'center',
     borderTopLeftRadius: 30,
@@ -60,7 +60,7 @@ const styles = StyleSheet.create<IStyles>({
   rightBox: {
     width: '75%',
     height: 45,
-    backgroundColor: '#4834d4',
+    backgroundColor: '#7f8fa6',
     paddingHorizontal: 8,
     justifyContent: 'center',
     borderBottomRightRadius: 30,
