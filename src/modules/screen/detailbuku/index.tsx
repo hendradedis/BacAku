@@ -1,18 +1,11 @@
-import React, {useCallback, useEffect, useState} from 'react';
-import {
-  Dimensions,
-  Image,
-  StyleSheet,
-  Text,
-  TouchableOpacity,
-  View,
-} from 'react-native';
+import React, {useState} from 'react';
+import {Image, Text, TouchableOpacity, View} from 'react-native';
 import Layouts from '../../components/layouts';
 import styles from './styles';
 import {useNavigation} from '@react-navigation/native';
-import PdfRendererView from 'react-native-pdf-renderer';
+import PDFReader from 'react-native-pdf-renderer';
 
-const source = {
+const sources = {
   uri: 'http://samples.leanpub.com/thereactnativebook-sample.pdf',
   cache: true,
 };
@@ -39,9 +32,10 @@ const DetailScreen = (data): React.ReactElement => {
         </TouchableOpacity>
         <Text>{dataBuku?.item?.title}</Text>
       </View>
-      <PdfRendererView
+      <PDFReader
         style={styles.pdf}
-        source={source}
+        source={{uri: sources}}
+
         // distanceBetweenPages={16}
         // maxZoom={5}
         // onPageChange={(current, total) => {
